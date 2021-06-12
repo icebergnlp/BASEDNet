@@ -8,6 +8,8 @@ As part of the CSE Early Research Scholars Program, our group developed **BASEDN
 
 Note: The data required for training our model is not included in the repo currently.
 
+Details on how to use our model can be found [here](onboard.md)
+
 This model was designed and developed by:
 
 - [@jonzamora](https://github.com/jonzamora)
