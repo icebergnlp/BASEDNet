@@ -5,10 +5,10 @@
 [Commands](#commands)  
 [Manually Annotating Data](#manually-annotating-data)  
 [Preparing Data For Model 2](#preparing-data-for-model-2)  
-[Run data.py](#run-data.py)  
-[Run train.py](#run-train.py)  
-[Train dhSegment (or use existing model)](#train-dhSegment)  
-[Run grad_search.py](#run-grad-search.py)  
+[Run data.py](#run-datapy)  
+[Run train.py](#run-trainpy)  
+[Train dhSegment (or use existing model)](#train-dhsegment-or-use-existing-model)  
+[Run grad_search.py](#run-grad_searchpy)  
 [Evaluate Accuracy of Predictions](#evaluate-accuracy-of-predictions)  
 
 
@@ -38,7 +38,7 @@ Exit the docker using `ctrl d` and stop the container after use:
 ```docker stop dhSegment```  
 
 ## Manually Annotating Data
-Transkribus Labelling Tool can be found [here](https://transkribus.eu/Transkribus/).
+Transkribus Labeling Tool can be found [here](https://transkribus.eu/Transkribus/).
 
 ## Preparing Data for Model 2
 1. Collect all good y’s (xml files) into a single folder and the images for each y into another folder   
@@ -46,7 +46,7 @@ Transkribus Labelling Tool can be found [here](https://transkribus.eu/Transkribu
     b. For READ_BAD, the images are in the “input” folder at `jason/datasets/READ_BAD_MASTER/Train&Test Simple` and xml files are in the `page-gt` folder  
     c. **Note**: These folders can be found on the sakura server  
 2. Run Aneesha & Lynn’s perturbation script    
-    a. Found in `src/bad_baseline_generator.py` 
+    a. Found in `src/bad_baseline_generator.py`  
     b. Usage:  
     ```python bad_baseline_generator.py [input directory] [output directory]```  
     c. In this case, the input directory will be the good y’s from the dataset, and the output directory will contain bad y’s with perturbations applied  
@@ -59,7 +59,7 @@ Transkribus Labelling Tool can be found [here](https://transkribus.eu/Transkribu
     ```  
     c. Should now have two folders called `labeled_good` and `labeled_bad` with .png labeled images  
 4. Now, split the folders into `train/val/test`  
-    a. Download the split_folders package [here](https://pypi.org/project/split-folders/)
+    a. Download the split_folders package [here](https://pypi.org/project/split-folders/)  
     b. Place `labeled_good` and `labeled_bad` as subdirectories of a new folder called `input`  
     c. Run split_folder command  
     ```  
