@@ -41,7 +41,7 @@ Exit the docker using `ctrl d` and stop the container after use:
 Transkribus Labelling Tool can be found [here](https://transkribus.eu/Transkribus/).
 
 ## Preparing Data for Model 2
-1. Collect all good y’s (xml files) into a single folder and the images for each y into another folder  
+1. Collect all good y’s (xml files) into a single folder and the images for each y into another folder   
     a. For EEBO, images are at `jason/datasets/EEBO` and xml files are at `jason/datasets/EEBO/team_page`  
     b. For READ_BAD, the images are in the “input” folder at `jason/datasets/READ_BAD_MASTER/Train&Test Simple` and xml files are in the `page-gt` folder  
     c. **Note**: These folders can be found on the sakura server  
@@ -59,8 +59,7 @@ Transkribus Labelling Tool can be found [here](https://transkribus.eu/Transkribu
     ```  
     c. Should now have two folders called `labeled_good` and `labeled_bad` with .png labeled images  
 4. Now, split the folders into `train/val/test`  
-    a. Download the split_folders package  
-        i. [https://pypi.org/project/split-folders/](https://pypi.org/project/split-folders/)  
+    a. Download the split_folders package [here](https://pypi.org/project/split-folders/)
     b. Place `labeled_good` and `labeled_bad` as subdirectories of a new folder called `input`  
     c. Run split_folder command  
     ```  
