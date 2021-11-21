@@ -14,7 +14,7 @@ This model was designed and developed by:
 
 - [@jonzamora](https://github.com/jonzamora)
 - [@aneesha99](https://github.com/aneesha99)
-- [@lmd8ng](https://github.com/lmd8ng)
+- [@lmidang](https://github.com/lmidang)
 - [@Xuan-Wang-Summer](https://github.com/Xuan-Wang-Summer)
 
 We received advising on this project from:
